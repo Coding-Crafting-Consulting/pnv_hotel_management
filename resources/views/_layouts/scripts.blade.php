@@ -8,6 +8,9 @@
 <script src="{{URL::asset('js/filter.js')}}"></script>
 <script src="{{URL::asset('js/resizings.js')}}"></script>
 
+<script src="{{URL::asset('js/stimulus.umd.js')}}"></script>
+<script src="{{URL::asset('js/controllers/hello_controller.js')}}"></script>
+
 <script src="{{URL::asset('js/entities/_layout.js')}}"></script>
 <script src="{{URL::asset('js/entities/booking.js')}}"></script>
 <script src="{{URL::asset('js/entities/bookingPurpose.js')}}"></script>
