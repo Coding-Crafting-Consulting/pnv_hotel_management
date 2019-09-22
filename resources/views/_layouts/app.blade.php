@@ -17,6 +17,9 @@
     <!-- Stylesheets -->
     @include('_layouts.stylesheets')
 
+    <!-- Scripts -->
+    @include('_layouts.scripts')
+
   </head>
 
 
@@ -52,7 +55,6 @@
 
     </section>
     
-    @include('_layouts.scripts')
   </body>
 
 </html>

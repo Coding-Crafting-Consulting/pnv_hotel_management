@@ -7,6 +7,8 @@
 <script src="{{URL::asset('js/datepicker.js')}}"></script>
 <script src="{{URL::asset('js/filter.js')}}"></script>
 <script src="{{URL::asset('js/resizings.js')}}"></script>
+<script src="{{URL::asset('js/turbolinks.js')}}"></script>
+<script src="{{URL::asset('js/turbolinksStart.js')}}"></script>
 
 <script src="{{URL::asset('js/stimulus.umd.js')}}"></script>
 <script src="{{URL::asset('js/controllers/hello_controller.js')}}"></script>
