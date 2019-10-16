@@ -44,7 +44,13 @@
       </aside>
 
       <main class="col" data-controller="hello">
-        <header data-action="mouseover->hello#toto click->hello#titi mouseout->hello#tata">
+        <header
+          data-action="
+              mouseover->hello#toto
+              click->hello#titi
+              mouseout->hello#tata
+            "
+        >
           @yield('header')
         </header>
 
