@@ -1,7 +1,8 @@
 <nav
   class="navbar navbar-expand-md navbar-dark py-2"
-  data-controller="menu"
+  data-controller="menu logout"
   data-menu-pathname="/"
+  data-logout-url="{!! url('/logout') !!}"
 >
 
   <div
@@ -44,8 +45,9 @@
       @auth
         
         <a
-          href="{!! url('/logout') !!}"
+          href="#"
           class="my-padding-bottom-8 my-padding-right-40"
+          data-action="click->logout#logout"
         >
           <div class="d-flex align-items-start">
             <div
@@ -233,7 +235,7 @@
       @auth
       
         <li class="d-none d-md-block my-margin-top-8">
-          <a href="{!! url('/logout') !!}">
+          <a href="#" data-action="click->logout#logout">
             <div class="d-flex align-items-start">
               <div
                 class="
