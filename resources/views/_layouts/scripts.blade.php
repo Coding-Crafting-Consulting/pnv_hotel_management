@@ -10,6 +10,7 @@
 <script defer src="{{URL::asset('js/turbolinksStart.js')}}"></script>
 
 <script defer src="{{URL::asset('js/stimulus.umd.js')}}"></script>
+<script defer src="{{URL::asset('js/controllers/form_controller.js')}}"></script>
 <script defer src="{{URL::asset('js/controllers/hello_controller.js')}}"></script>
 <script defer src="{{URL::asset('js/controllers/logout_controller.js')}}"></script>
 <script defer src="{{URL::asset('js/controllers/menu_controller.js')}}"></script>

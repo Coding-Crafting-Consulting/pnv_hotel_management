@@ -22,7 +22,14 @@
   @endif
 
 
-  <form action="{!! route('login.authenticate') !!}" method="post" enctype="multipart/form-data">
+  <form
+    data-controller="form"
+    data-action="submit->form#submit"
+    data-form-action="{!! route('login.authenticate') !!}"
+    data-form-method="post"
+    data-form-redirect="{!! route('home') !!}"
+    enctype="multipart/form-data"
+  >
     @csrf
 
     <div class="row my-padding-bottom-19">

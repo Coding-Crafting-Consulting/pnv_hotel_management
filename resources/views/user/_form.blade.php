@@ -8,8 +8,15 @@
 
 
 <form
-  action="{!! $action !!}"
-  method="post"
+  data-controller="form"
+  data-action="submit->form#submit"
+  data-form-action="{!! $action !!}"
+  data-form-method="post"
+  
+  @isset ($redirect)
+    data-form-redirect="{!! $redirect !!}"
+  @endisset
+  
   enctype="multipart/form-data"
 >
   @csrf

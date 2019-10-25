@@ -236,9 +236,14 @@ class UserController extends Controller
 
 
       // if user has admin rights and is not editing him/herself
-      return Auth::check() && Auth::user()->hasAdminRights() && Auth::id() != $user->id ?
-          redirect()->route('users.index')->with('success','Successfully updated!') :
-          redirect()->route('home');
+      return url(
+        Auth::check() &&
+          Auth::user()->hasAdminRights() &&
+          Auth::id() != $user->id ?
+          
+            '/users' :
+            '/'
+      );
     }
 
     /**
